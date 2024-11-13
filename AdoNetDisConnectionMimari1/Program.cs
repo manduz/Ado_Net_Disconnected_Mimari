@@ -13,11 +13,18 @@ namespace AdoNetDisConnectionMimari1
         static void Main(string[] args)
         {
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-CU1M14V\\SQLKODLAB;Initial Catalog=SQLFULL;Persist Security Info=True;User ID=udemy1;Password=1;Encrypt=True;TrustServerCertificate=True");
-           
-            SqlDataAdapter adapter = new SqlDataAdapter("select * from Musterim; select * from MusteriGirisBilgileri", con);
 
-            DataSet ds = new DataSet();
-            adapter.Fill(ds);
+            //veri ekliyor
+            string sorgu = "insert into Musterim values(15,'Burak','Çakır')";
+
+            SqlDataAdapter adapter = new SqlDataAdapter();
+
+            adapter.InsertCommand = new SqlCommand(sorgu, con);
+
+            con.Open();
+
+            adapter.InsertCommand.ExecuteNonQuery();
+            con.Close();
 
 
            
