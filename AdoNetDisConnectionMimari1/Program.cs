@@ -14,17 +14,28 @@ namespace AdoNetDisConnectionMimari1
         {
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-CU1M14V\\SQLKODLAB;Initial Catalog=SQLFULL;Persist Security Info=True;User ID=udemy1;Password=1;Encrypt=True;TrustServerCertificate=True");
 
-            //var olan veri güncelleniyor
-            SqlCommand cmd = new SqlCommand("update Musterim set Isim='Gizem' where MusteriID=15",con);
+            //******************************************
+            ////var olan veri güncelleniyor
+            //SqlCommand cmd = new SqlCommand("update Musterim set Isim='Gizem' where MusteriID=15",con);
 
+            //SqlDataAdapter adapter = new SqlDataAdapter();
+            //adapter.UpdateCommand = cmd;
+            //con.Open();
+            //adapter.UpdateCommand.ExecuteNonQuery();
+            //con.Close();
+
+            //******************************************
+
+            //Delete islemi
+            SqlCommand cmd = new SqlCommand("delete Musterim where MusteriID = 15",con);
             SqlDataAdapter adapter = new SqlDataAdapter();
-            adapter.UpdateCommand = cmd;
+            adapter.DeleteCommand = cmd;
             con.Open();
-            adapter.UpdateCommand.ExecuteNonQuery();
+            adapter.DeleteCommand.ExecuteNonQuery();
             con.Close();
 
 
-           
+
 
 
         }
