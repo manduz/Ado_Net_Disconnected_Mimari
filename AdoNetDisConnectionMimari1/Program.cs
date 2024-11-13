@@ -42,8 +42,34 @@ namespace AdoNetDisConnectionMimari1
 
             SqlCommandBuilder builder = new SqlCommandBuilder(adapter);
 
-            DataSet ds = new DataSet();
+            DataSet ds = new DataSet("Veritabanım");
+            
             adapter.Fill(ds);
+            ds.Tables[0].TableName = "Tablolarım";
+
+            Console.WriteLine($"Veritabanı ismi: {ds.DataSetName} Tablo adi: {ds.Tables[0].TableName} ");
+            Console.WriteLine($"Veritabanı içerisinde toplam {ds.Tables.Count.ToString()} adet tablo vardrı");
+
+            for (int i = 0; i < ds.Tables.Count; i++)
+            {
+                Console.WriteLine($"Tablo adi: {ds.Tables[i].TableName}");   
+            }
+
+
+            //  ds.WriteXml(@"C:\EmekWebRepo\C#\Ado_Net_Disconnected_Mimari\AdoNetDisConnectionMimari1\XML\Verilerim.xml");
+
+            //var olan dosyayı okumak için de ReadXml kullanırsın
+          //  ds.ReadXml(@"C:\EmekWebRepo\C#\Ado_Net_Disconnected_Mimari\AdoNetDisConnectionMimari1\XML\Verilerim.xml");
+
+
+            //update delete işlemi
+
+            ds.Tables[0].Rows.Add(36, "Ahmet", "Ahmet");
+            ds.Tables[0].Rows.Add(44, "Ahmet", "Ahmet");
+
+            adapter.Update(ds);
+
+            Console.ReadLine();
 
 
 

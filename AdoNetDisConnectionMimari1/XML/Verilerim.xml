@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<Veritabanım>
+  <Tablolarım>
+    <MusteriID>1</MusteriID>
+    <Isim>emek</Isim>
+    <Soyisim>manduz</Soyisim>
+  </Tablolarım>
+  <Tablolarım>
+    <MusteriID>1</MusteriID>
+    <Isim>emek</Isim>
+    <Soyisim>manduz</Soyisim>
+  </Tablolarım>
+  <Tablolarım>
+    <MusteriID>5</MusteriID>
+    <Isim>Emek</Isim>
+    <Soyisim>Manduz</Soyisim>
+  </Tablolarım>
+  <Tablolarım>
+    <MusteriID>5</MusteriID>
+    <Isim>Emek</Isim>
+    <Soyisim>Manduz</Soyisim>
+  </Tablolarım>
+  <Tablolarım>
+    <MusteriID>5</MusteriID>
+    <Isim>Emek</Isim>
+    <Soyisim>Manduz</Soyisim>
+  </Tablolarım>
+</Veritabanım>
