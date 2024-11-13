@@ -1,0 +1,7 @@
+C:\EmekWebRepo\C#\Ado_Net_Disconnected_Mimari\AdoNetDisConnectionMimari1\bin\Debug\AdoNetDisConnectionMimari1.exe.config
+C:\EmekWebRepo\C#\Ado_Net_Disconnected_Mimari\AdoNetDisConnectionMimari1\bin\Debug\AdoNetDisConnectionMimari1.exe
+C:\EmekWebRepo\C#\Ado_Net_Disconnected_Mimari\AdoNetDisConnectionMimari1\bin\Debug\AdoNetDisConnectionMimari1.pdb
+C:\EmekWebRepo\C#\Ado_Net_Disconnected_Mimari\AdoNetDisConnectionMimari1\obj\Debug\AdoNetDisConnectionMimari1.csproj.AssemblyReference.cache
+C:\EmekWebRepo\C#\Ado_Net_Disconnected_Mimari\AdoNetDisConnectionMimari1\obj\Debug\AdoNetDisConnectionMimari1.csproj.CoreCompileInputs.cache
+C:\EmekWebRepo\C#\Ado_Net_Disconnected_Mimari\AdoNetDisConnectionMimari1\obj\Debug\AdoNetDisConnectionMimari1.exe
+C:\EmekWebRepo\C#\Ado_Net_Disconnected_Mimari\AdoNetDisConnectionMimari1\obj\Debug\AdoNetDisConnectionMimari1.pdb
