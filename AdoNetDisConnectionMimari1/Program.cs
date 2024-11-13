@@ -27,12 +27,25 @@ namespace AdoNetDisConnectionMimari1
             //******************************************
 
             //Delete islemi
-            SqlCommand cmd = new SqlCommand("delete Musterim where MusteriID = 15",con);
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            adapter.DeleteCommand = cmd;
-            con.Open();
-            adapter.DeleteCommand.ExecuteNonQuery();
-            con.Close();
+            //SqlCommand cmd = new SqlCommand("delete Musterim where MusteriID = 15",con);
+            //SqlDataAdapter adapter = new SqlDataAdapter();
+            //adapter.DeleteCommand = cmd;
+            //con.Open();
+            //adapter.DeleteCommand.ExecuteNonQuery();//command'i göndermiş oluyoruz execute ile
+            //con.Close();
+
+
+            //******************************************
+
+            //SqlCommandBuilder işlemi
+            SqlDataAdapter adapter = new SqlDataAdapter("select * from Musterim",con);
+
+            SqlCommandBuilder builder = new SqlCommandBuilder(adapter);
+
+            DataSet ds = new DataSet();
+            adapter.Fill(ds);
+
+
 
 
 
