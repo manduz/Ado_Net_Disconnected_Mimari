@@ -14,16 +14,13 @@ namespace AdoNetDisConnectionMimari1
         {
             SqlConnection con = new SqlConnection("Data Source=DESKTOP-CU1M14V\\SQLKODLAB;Initial Catalog=SQLFULL;Persist Security Info=True;User ID=udemy1;Password=1;Encrypt=True;TrustServerCertificate=True");
 
-            //veri ekliyor
-            string sorgu = "insert into Musterim values(15,'Burak','Çakır')";
+            //var olan veri güncelleniyor
+            SqlCommand cmd = new SqlCommand("update Musterim set Isim='Gizem' where MusteriID=15",con);
 
             SqlDataAdapter adapter = new SqlDataAdapter();
-
-            adapter.InsertCommand = new SqlCommand(sorgu, con);
-
+            adapter.UpdateCommand = cmd;
             con.Open();
-
-            adapter.InsertCommand.ExecuteNonQuery();
+            adapter.UpdateCommand.ExecuteNonQuery();
             con.Close();
 
 
